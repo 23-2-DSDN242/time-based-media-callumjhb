@@ -1,4 +1,3 @@
-// Update this function to draw you own maeda clock on a 960x500 canvas
 function draw_clock(obj) {
   angleMode(DEGREES);
   background(150); 
