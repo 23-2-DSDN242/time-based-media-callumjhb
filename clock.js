@@ -55,7 +55,7 @@ function draw_clock(obj) {
   quad(408.2, 345.2, 960, 442.6, 960, 446.4, 404.2, 348.4); // window light
   
   //window
-  fill(202, 191, 99, 125);
+  fill(202, 191, 99, 110);
   quad(408.2, 201, 960, 299, 960, 442.6, 408.2, 345); //window
   
   // window frames
@@ -82,28 +82,5 @@ function draw_clock(obj) {
   fill(209, 216, 123, 50);
   arc(203.5, 461, 113.3, 20, 0, PI);
 
-  let from = color(218, 165, 32);
-  let to = color(72, 61, 139);
-
-  // Create intermediate colors.
-  let interA = lerpColor(from, to, 0.33);
-  let interB = lerpColor(from, to, 0.66);
-
-  // Draw the left rectangle.
-  noStroke();
-  fill(from);
-  rect(10, 20, 20, 60);
-
-  // Draw the left-center rectangle.
-  fill(interA);
-  rect(30, 20, 20, 60);
-
-  // Draw the right-center rectangle.
-  fill(interB);
-  rect(50, 20, 20, 60);
-
-  // Draw the right rectangle.
-  fill(to);
-  rect(70, 20, 20, 60);
-
+  
 }
